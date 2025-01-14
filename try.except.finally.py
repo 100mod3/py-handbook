@@ -1,19 +1,24 @@
 # More on exceptions: https://docs.python.org/3/library/exceptions.html
 
 ### Basic example of 'try-except-else' ###
-try:
-  eggs = int(input('How many eggs you have? '))
-except ValueError:
-  print("Please use number as input.")
-else:
-   cakes = eggs // 4
-   print('You can make %d %s' % (cakes, 'cake' if cakes == 1 else 'cakes'))
+while True:
+    try:
+        eggs = int(input('How many eggs you have? '))
+    except ValueError:
+        print("Please use number as input.")
+    else:
+        break
+cakes = eggs // 4
+print('You can make %d %s' % (cakes, 'cake' if cakes == 1 else 'cakes'))
+
 '''
 >>> How many eggs you have? 4
 >>> You can make 1 cake
 >>> 
 >>> How many eggs you have? asd
 >>> Please use number as input.
+>>> How many eggs you have? 8
+>>> You can make 2 cakes
 '''
 
 ### Multiple 'except' can be used ###
