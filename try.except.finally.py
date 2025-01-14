@@ -10,7 +10,6 @@ while True:
         break
 cakes = eggs // 4
 print('You can make %d %s' % (cakes, 'cake' if cakes == 1 else 'cakes'))
-
 '''
 >>> How many eggs you have? 4
 >>> You can make 1 cake
